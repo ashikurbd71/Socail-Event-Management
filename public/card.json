@@ -4,6 +4,7 @@
       "name": "Weddings",
       "price": 5000,
       "description": "Celebrate your special day with our customized wedding packages.",
+      "details": "Embark on a journey of love and union with our expertly crafted wedding packages. From the moment you say 'yes' to the final 'I do,' we'll be by your side, ensuring every detail is perfect. Our dedicated team will work tirelessly to bring your dream wedding to life, infusing it with elegance, romance, and sophistication. Let us create an enchanting atmosphere where love blooms and memories are made. With personalized services, exquisite decor, sumptuous cuisine, and seamless coordination, your wedding day will be a magical tale to be cherished forever.",
       "image": "https://i.ibb.co/WVwNCDR/wedding.jpg"
     },
     {
@@ -11,6 +12,7 @@
       "name": "Birthday Parties",
       "price": 800,
       "description": "Plan a memorable birthday party with our exciting party packages.",
+      "details": "Make your birthday an extraordinary celebration with our specially designed party packages. Whether you're young or young at heart, we have something for everyone. Let your imagination run wild, and we'll bring your dream birthday to reality. Our packages offer a blend of creativity, entertainment, and delicious treats, making your special day one to remember. From themed decorations to exciting activities, our aim is to create a joyful and lively atmosphere for you and your guests, ensuring a fantastic birthday bash that leaves a lasting smile on your face.",
       "image": "https://i.ibb.co/mv0hXg2/brithday.jpg"
     },
     {
@@ -18,6 +20,7 @@
       "name": "Anniversaries",
       "price": 1200,
       "description": "Celebrate your years of togetherness with our anniversary celebration packages.",
+      "details": "Rejoice in the beautiful journey of togetherness with our carefully curated anniversary celebration packages. Whether you've been married for one year or fifty, each anniversary deserves a heartfelt celebration. Our packages are designed to honor your unique love story and the joyous years you've spent together. Let us create an unforgettable anniversary event filled with love, laughter, and cherished moments. We'll ensure that your special day is a reflection of the beautiful bond you share and a testament to the many more years of happiness ahead.",
       "image": "https://i.ibb.co/MVCNJ3G/Anniversaries.jpg"
     },
     {
@@ -25,6 +28,7 @@
       "name": "Engagement Parties",
       "price": 1000,
       "description": "Mark the beginning of your beautiful journey with our engagement party packages.",
+      "details": "Start your journey to 'forever' with our enchanting engagement party packages. The engagement marks the start of a beautiful chapter, and we're here to make it truly special. Our packages are designed to capture the essence of your love story and provide a magical setting for the announcement of your commitment. From elegant decor to lively entertainment, we'll curate an event that reflects your personalities and sets the tone for the exciting journey ahead. Let us help you celebrate this significant milestone with joy, love, and a touch of romance.",
       "image": "https://i.ibb.co/fqtm1dw/Engagement.jpg"
     },
     {
@@ -32,6 +36,7 @@
       "name": "Retirement Parties",
       "price": 600,
       "description": "Bid farewell to a wonderful career with our retirement party packages.",
+      "details": "Say goodbye to a fulfilling career and welcome the relaxing days of retirement with our thoughtfully planned retirement party packages. It's time to honor your hard work, dedication, and countless achievements. Our packages cater to all preferences, ensuring a memorable event that suits your style. From elegant gatherings to fun-filled parties, we'll create an atmosphere of joy and celebration. Let us help you transition into this exciting phase of life with a memorable event that recognizes your incredible journey and looks forward to new adventures.",
       "image": "https://i.ibb.co/hgLYP1g/Retirement.jpg"
     },
     {
@@ -39,6 +44,7 @@
       "name": "Baby Shower",
       "price": 300,
       "description": "Welcome the new arrival with joy by organizing a memorable baby shower.",
+      "details": "Celebrate the upcoming arrival of your little bundle of joy with our heartwarming baby shower packages. It's a time of anticipation and excitement, and we're here to make it unforgettable. Our packages are designed to reflect the love and happiness this new chapter brings to your life. From charming decorations to delightful activities, we'll ensure a joyful and love-filled event. Let us create a baby shower that honors the mom-to-be and prepares the way for the newest member of your family with warmth and love.",
       "image": "https://i.ibb.co/S7yWNMy/Baby.jpg"
     }
-  ]
+]

@@ -4,6 +4,7 @@ import About from "../Pages/About";
 
 import Home from "../Pages/Home";
 import Contect from "../Pages/Contect";
+import Serviceinfo from "../Component/Service/Serviceinfo";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,12 @@ const router = createBrowserRouter([
 
             path:"/contect",
             element:<Contect></Contect>
-        }
+        },
+    {
+        path:"/serviceinfo/:id",
+        element:<Serviceinfo></Serviceinfo>,
+        loader: ()=> fetch('/card.json')
+    }
 
 
     ]

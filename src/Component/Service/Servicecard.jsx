@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Servicecard = ({ event }) => {
-  const { name, price, description, image } = event;
+  const { name, price, description, image,id } = event;
   console.log(event);
   return (
     <div>
@@ -25,7 +25,7 @@ const Servicecard = ({ event }) => {
           </p>
          
          <div className="flex jus justify-between items-center">
-         <Link> <button className="btn btn-outline btn-success  ">View Details</button></Link>
+         <Link to={`serviceinfo/${id}`}> <button className="btn btn-outline btn-success  ">View Details</button></Link>
 
            <div className="text-lg font font-semibold text-[#fff]">
             Price : {price}<span>$</span>
