@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div>
             <footer className="footer footer-center p-10 bg-[#141E46] text-[#fff]  rounded">
   <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
+ 
+ <Link className='text-lg font-semibold' to={"/"}>Home</Link>
+ <Link className='text-lg font-semibold' to={"/about"}>About</Link>
+ <Link className='text-lg font-semibold' to={"/profile"}>Profile</Link>
+    
   </nav> 
   <nav>
     <div className="grid grid-flow-col gap-4">
@@ -18,7 +20,7 @@ const Footer = () => {
     </div>
   </nav> 
   <aside>
-    <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    <p className='text-lg'>Copyright © 2023 - Social Eevent</p>
   </aside>
 </footer>
         </div>

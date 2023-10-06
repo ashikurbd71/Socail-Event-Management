@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navber = () => {
   return (
     <div>
-      <div className="navbar bg-[#141E46]">
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
@@ -51,18 +51,18 @@ const Navber = () => {
 
               <li className="text-lg font-bold">
                 <NavLink
-                  to="/profile"
+                  to="/contect"
                   className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "bg-green-500" : ""
                   }
                 >
-                  Profile
+                  Contect
                 </NavLink>
               </li>
             </ul>
           </div>
-           <Link to={"/"}>  <a  className="btn btn-ghost font-bold normal-case text-3xl text-[#EEEEEE]">
-            Social <span className="text-2xl text-[#088395]">Events</span>
+           <Link to={"/"}>  <a  className="btn btn-ghost font-bold normal-case lg:text-3xl text-2xl text-[#EEEEEE]">
+            Social <span className="lg:text-2xl text-xl text-[#088395]">Events</span>
           </a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -94,18 +94,18 @@ const Navber = () => {
             <li className="text-lg font-bold">
               {" "}
               <NavLink
-                to="/profile"
+                to="/contect"
                 className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "bg-green-500" : ""
                 }
               >
-                Profile
+                Contect
               </NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-[#088395] fon font-extrabold">Login</a>
+    <Link> <button className="btn btn-outline btn-success  ">Login</button></Link>
         </div>
       </div>
     </div>
