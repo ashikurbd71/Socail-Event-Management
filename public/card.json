@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Weddings",
+      "price": 5000,
+      "description": "Celebrate your special day with our customized wedding packages.",
+      "image": "https://i.ibb.co/WVwNCDR/wedding.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Birthday Parties",
+      "price": 800,
+      "description": "Plan a memorable birthday party with our exciting party packages.",
+      "image": "https://i.ibb.co/mv0hXg2/brithday.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Anniversaries",
+      "price": 1200,
+      "description": "Celebrate your years of togetherness with our anniversary celebration packages.",
+      "image": "https://i.ibb.co/MVCNJ3G/Anniversaries.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Engagement Parties",
+      "price": 1000,
+      "description": "Mark the beginning of your beautiful journey with our engagement party packages.",
+      "image": "https://i.ibb.co/fqtm1dw/Engagement.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Retirement Parties",
+      "price": 600,
+      "description": "Bid farewell to a wonderful career with our retirement party packages.",
+      "image": "https://i.ibb.co/hgLYP1g/Retirement.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Baby Shower",
+      "price": 300,
+      "description": "Welcome the new arrival with joy by organizing a memorable baby shower.",
+      "image": "https://i.ibb.co/S7yWNMy/Baby.jpg"
+    }
+  ]
