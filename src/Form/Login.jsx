@@ -18,6 +18,26 @@ const Login = () => {
     const email = form.get('email')
     const password = form.get('password')
 
+     if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){
+
+      return toast.error("email doesn't match")
+     }
+
+    if(password.length < 6){
+
+      return toast.error("password doesn't match")
+  }
+
+  else if (!/[A-Z]/.test(password)){
+
+      return toast.error("password doesn't match")
+
+  }else if(!/[\W_]/.test(password)){
+
+      return toast.error("password doesn't match")
+
+  }
+
     signinuser(email,password)
 
      .then(result => {

@@ -17,6 +17,21 @@ const Register = () => {
     const email = form.get("email");
     const password = form.get("password");
 
+    if(password.length < 6){
+
+        return toast.error('Password Must Be 6 Chracter!')
+    }
+
+    else if (!/[A-Z]/.test(password)){
+
+        return toast.error('one letter must be upercase!')
+
+    }else if(!/[\W_]/.test(password)){
+
+        return toast.error('one letter must be  special character!')
+
+    }
+
     createuser(email,password)
      .then(result => {
 
