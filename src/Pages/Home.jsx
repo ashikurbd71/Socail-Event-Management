@@ -1,7 +1,7 @@
-import React from 'react';
+
 import Banner from '../Component/Heading/Banner/Banner';
-import Navber from "../Component/Heading/Navber/Navber";
 import Service from '../Component/Service/Service';
+import Team from './Team';
 
 const Home = () => {
     return (
@@ -15,6 +15,8 @@ const Home = () => {
 
           <div className='my-10 mx-auto  max-w-screen-xl'>
             <Service></Service>
+
+            <Team></Team>
           </div>
 
         </>

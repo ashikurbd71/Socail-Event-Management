@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Media from "../Media/Media";
 import { Authcontext } from "../Provider/AuthPorvider";
 import toast from "react-hot-toast";
@@ -8,6 +8,9 @@ import toast from "react-hot-toast";
 const Login = () => {
   const [showpass, setShowpass] = useState(false);
   const { signinuser } = useContext(Authcontext);
+  const location = useLocation()
+
+  const navigate = useNavigate()
 
   const handlesubmit = (e) => {
     e.preventDefault();
@@ -32,7 +35,11 @@ const Login = () => {
     signinuser(email, password)
       .then((result) => {
         console.log(result.user);
+
+        navigate(location?.state ? location?.state : "/")
         return toast.success("Login Successfuly!");
+    
+
       })
       .catch((error) => {
         console.log(error.message);

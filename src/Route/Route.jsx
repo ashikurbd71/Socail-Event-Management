@@ -8,6 +8,7 @@ import Serviceinfo from "../Component/Service/Serviceinfo";
 import Login from "../Form/Login";
 import Register from "../Form/Register";
 import Privteroute from "../Privteroute/Privteroute";
+import Serviceinfocard from "../Component/Service/Serviceinfocard";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
         },
     {
         path:"/serviceinfo/:id",
-        element:<Privteroute><Serviceinfo></Serviceinfo></Privteroute>,
+        element: <Privteroute><Serviceinfo></Serviceinfo></Privteroute>,
         loader: ()=> fetch('/card.json')
     },
     {
@@ -44,7 +45,8 @@ const router = createBrowserRouter([
     {
         path:"/register",
         element:<Register></Register>
-    }
+    },
+
 
 
 

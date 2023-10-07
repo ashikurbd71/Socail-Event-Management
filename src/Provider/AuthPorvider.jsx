@@ -31,19 +31,17 @@ const Gitsigin = () => {
 
 // obsever
 
-  useEffect(() => {
+useEffect(() => {
+  const unsbcribe = onAuthStateChanged(auth, (user) => {
 
-    const unsubscribe = onAuthStateChanged(auth,(currentuser) => {
+    setUser(user);
+  });
 
-           setUser(currentuser)
-    })
+  return () => {
+    unsbcribe();
+  };
+}, []);
 
-    return () => {
-
-        unsubscribe()
-    }
-
-  },[])
 
 //   createuse
 

@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "job_title": "Event Coordinator",
+      "description": "Sarah is responsible for organizing and coordinating various aspects of the social event, ensuring smooth execution and a memorable experience for attendees.",
+      "img": "https://i.ibb.co/80NKqLX/download-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Michael Rodriguez",
+      "job_title": "Marketing and Promotion Specialist",
+      "description": "Michael oversees marketing strategies, promotional activities, and social media campaigns to drive engagement and attendance for the event.",
+      "img": "https://i.ibb.co/WfYmFNK/download-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "job_title": "Logistics Coordinator",
+      "description": "Emily handles logistics and ensures all necessary resources, materials, and equipment are in place for a seamless event flow and positive attendee experience.",
+      "img": "https://i.ibb.co/6y9LN15/download-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "David Smith",
+      "job_title": "Volunteer Coordinator",
+      "description": "David recruits, trains, and coordinates volunteers to assist with event operations, guiding them to fulfill their roles effectively and efficiently.",
+      "img": "https://i.ibb.co/D7rhL9L/download-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jessica Turner",
+      "job_title": "Communication Liaison",
+      "description": "Jessica acts as the primary point of contact for event-related communication, ensuring clear and timely information dissemination to all stakeholders involved.",
+      "img": "https://i.ibb.co/mcTqgLy/download.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Alex Parker",
+      "job_title": "Entertainment Coordinator",
+      "description": "Alex is responsible for organizing and coordinating entertainment activities and performances to ensure a lively and engaging atmosphere during the event.",
+      "img": "https://i.ibb.co/LRwZBV6/images.jpg"
+    }
+  ]
