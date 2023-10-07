@@ -105,7 +105,7 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end">
-    <Link> <button className="btn btn-outline btn-success  ">Login</button></Link>
+    <Link to={'/login'}> <button className="btn btn-outline btn-success  ">Login</button></Link>
         </div>
       </div>
     </div>

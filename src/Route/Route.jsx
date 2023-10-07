@@ -5,6 +5,8 @@ import About from "../Pages/About";
 import Home from "../Pages/Home";
 import Contect from "../Pages/Contect";
 import Serviceinfo from "../Component/Service/Serviceinfo";
+import Login from "../Form/Login";
+import Register from "../Form/Register";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +35,17 @@ const router = createBrowserRouter([
         path:"/serviceinfo/:id",
         element:<Serviceinfo></Serviceinfo>,
         loader: ()=> fetch('/card.json')
+    },
+    {
+        path:"/login",
+        element:<Login></Login>
+    },
+    {
+        path:"/register",
+        element:<Register></Register>
     }
+
+
 
 
     ]
