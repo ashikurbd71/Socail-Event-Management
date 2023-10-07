@@ -1,32 +1,28 @@
-import React, { useContext } from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { FaGoogle } from 'react-icons/fa';
-import { Authcontext } from '../Provider/AuthPorvider';
-import toast from 'react-hot-toast';
+import React, { useContext } from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+import { Authcontext } from "../Provider/AuthPorvider";
+import toast from "react-hot-toast";
 
 const Media = () => {
+  const { Googlesigin, Gitsigin } = useContext(Authcontext);
 
-  const{Googlesigin,Gitsigin} = useContext(Authcontext)
-
-  const handleprovider = media => {
-
+  const handleprovider = (media) => {
     media()
+      .then((result) => {
+        console.log(result.user);
 
-   .then(result => {
+        return toast.success("Login SuccessFuly");
+      })
 
-    console.log(result.user)
-
-     return toast.success('Login SuccessFuly')
-   })
-
-   .catch(error => {
-    console.log(error)
-    return toast.error(error.message)
-   })
-  }
-    return (
-        <div>
-            <div className="mt- flex justify-center gap-4">
+      .catch((error) => {
+        console.log(error);
+        return toast.error(error.message);
+      });
+  };
+  return (
+    <div>
+      <div className="mt- flex justify-center gap-4">
         <button
           onClick={() => handleprovider(Googlesigin)}
           className="btn bg-[#fff] btn-outline "
@@ -43,8 +39,8 @@ const Media = () => {
           <span> Github</span>
         </button>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Media;

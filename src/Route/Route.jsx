@@ -7,6 +7,7 @@ import Contect from "../Pages/Contect";
 import Serviceinfo from "../Component/Service/Serviceinfo";
 import Login from "../Form/Login";
 import Register from "../Form/Register";
+import Privteroute from "../Privteroute/Privteroute";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
         },
     {
         path:"/serviceinfo/:id",
-        element:<Serviceinfo></Serviceinfo>,
+        element:<Privteroute><Serviceinfo></Serviceinfo></Privteroute>,
         loader: ()=> fetch('/card.json')
     },
     {

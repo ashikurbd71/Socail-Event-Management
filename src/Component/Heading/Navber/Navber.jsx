@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Authcontext } from "../../../Provider/AuthPorvider";
+import toast from "react-hot-toast";
+import users from '../../../assets/user.png'
 
 const Navber = () => {
+
+  const{user,siginout} =useContext(Authcontext)
+
+   const handlesiginout = () => {
+
+    siginout()
+      .then((result) => {
+        console.log(result.user);
+        return toast.success("Logout Successfuly!");
+      })
+      .catch((error) => {
+        console.log(error.message);
+
+        return toast.error(error.message);
+      });
+
+
+   }
   return (
     <div>
       <div className="navbar bg-[#141E46] pb-5 ">
@@ -105,7 +126,41 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end">
-    <Link to={'/login'}> <button className="btn btn-outline btn-success  ">Login</button></Link>
+
+          <div>
+
+     {
+
+      user ?  <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img src={user?.photoURL} />
+        </div>
+      </label>
+      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+        
+        <li className="text-xl font-semibold"><h1>{user?.displayName}</h1></li>
+        <li className="text-xl font-semibold"><h1>{user?.email}</h1></li>
+       <Link onClick={handlesiginout}> <li className="text-xl font-semibold"><button>Logout</button></li></Link>
+         
+  
+      </ul>
+    </div> : <div className="avatar">
+  <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+    <img src={users} className="w-8"/>
+  </div>
+</div>
+
+         
+     }
+
+      
+
+         
+          </div>
+
+          
+    <Link to={'/login'}> <button className="btn btn-outline btn-success ml-4 ">Login</button></Link>
         </div>
       </div>
     </div>

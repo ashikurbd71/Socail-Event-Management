@@ -7,45 +7,33 @@ import toast from "react-hot-toast";
 
 const Register = () => {
   const [showpass, setShowpass] = useState(false);
-   const{createuser} =  useContext(Authcontext)
+  const { createuser } = useContext(Authcontext);
 
   const handlesubmit = (e) => {
-
-    e.preventDefault()
+    e.preventDefault();
     const form = new FormData(e.currentTarget);
 
     const email = form.get("email");
     const password = form.get("password");
 
-    if(password.length < 6){
-
-        return toast.error('Password Must Be 6 Chracter!')
+    if (password.length < 6) {
+      return toast.error("Password Must Be 6 Chracter!");
+    } else if (!/[A-Z]/.test(password)) {
+      return toast.error("one letter must be upercase!");
+    } else if (!/[\W_]/.test(password)) {
+      return toast.error("one letter must be  special character!");
     }
 
-    else if (!/[A-Z]/.test(password)){
+    createuser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        return toast.success("Register Successfuly!");
+      })
+      .catch((error) => {
+        console.log(error.message);
 
-        return toast.error('one letter must be upercase!')
-
-    }else if(!/[\W_]/.test(password)){
-
-        return toast.error('one letter must be  special character!')
-
-    }
-
-    createuser(email,password)
-     .then(result => {
-
-        console.log(result.user)
-        return toast.success('Register Successfuly!')
-         
-       
-    })
-    .catch(error => {
-
-        console.log(error.message)
-
-        return toast.error(error.message)
-    })
+        return toast.error(error.message);
+      });
 
     console.log(email, password);
   };
@@ -55,38 +43,44 @@ const Register = () => {
       <div className="w-full max-w-sm p-4 my-10 bg-[#141E46] border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
         <form onSubmit={handlesubmit} className="space-y-6" action="#">
           <h5 className="text-[30px] font-bold text-[#1AACAC]  dark:text-white text-center">
-            
             Register your account
           </h5>
 
+          <div>
+            <label
+              htmlFor="email"
+              className="block mb-2    dark:text-white  text-[#fff] font-semibold text-[20px]"
+            >
+              Your Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              // ref={emailRef}
+              id="name"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
 
           <div>
-          <label htmlFor="email" className="block mb-2    dark:text-white  text-[#fff] font-semibold text-[20px]">Your Name</label>
-          <input
-            type="text"
-            name="name"
-            // ref={emailRef}
-            id="name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-            placeholder="Enter your email address"
-            required
-          />
-        </div>
-
-
-        <div>
-          <label htmlFor="email" className="block mb-2    dark:text-white  text-[#fff] font-semibold text-[20px]">Photo URL</label>
-          <input
-            type="url"
-            name="photo"
-            // ref={emailRef}
-            id="image"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-            placeholder="Enter your email address"
-            required
-          />
-        </div>
-
+            <label
+              htmlFor="email"
+              className="block mb-2    dark:text-white  text-[#fff] font-semibold text-[20px]"
+            >
+              Photo URL
+            </label>
+            <input
+              type="url"
+              name="photo"
+              // ref={emailRef}
+              id="image"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
 
           <div>
             <label
@@ -145,7 +139,6 @@ const Register = () => {
                 Axpect our trams and condetion
               </label>
             </div>
-         
           </div>
           <button
             type="submit"

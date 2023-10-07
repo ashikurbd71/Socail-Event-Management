@@ -1,6 +1,6 @@
 
 
-import { GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithPopup, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import auth from '../Firebase/Friebase';
 
@@ -11,7 +11,7 @@ import auth from '../Firebase/Friebase';
 
 const AuthPorvider = ({children}) => {
 
-      const [user,setUser] =useState(null)
+      const [user,setUser] = useState(null)
 
 
 // Googlesignin
@@ -59,12 +59,20 @@ const signinuser = (email,password) => {
     return signInWithEmailAndPassword(auth,email,password)
 }
 
+// siginout
+
+const siginout = () => {
+
+  return signOut(auth)
+}
+
    const Authdata = {
     user,
     Googlesigin,
     Gitsigin,
     createuser,
-    signinuser
+    signinuser,
+    siginout
 }
 
 
