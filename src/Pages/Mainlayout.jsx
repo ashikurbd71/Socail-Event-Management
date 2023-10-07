@@ -2,22 +2,21 @@ import { Outlet } from "react-router-dom";
 
 import Footer from "../Component/Heading/Footer/Footer";
 import Navber from "../Component/Heading/Navber/Navber";
+import { Toaster } from "react-hot-toast";
 
 const Mainlayout = () => {
-    return (
-        <>
+  return (
+    <>
+      <Navber></Navber>
 
-      
-        <Navber></Navber>
+      <div className=" min-h-screen">
+        <Outlet></Outlet>
+      </div>
 
-        <div className=" min-h-screen">
-          <Outlet></Outlet>
-        </div>
-
-        <Footer></Footer>
-
-        </>
-    );
+      <Footer></Footer>
+      <Toaster></Toaster>
+    </>
+  );
 };
 
 export default Mainlayout;

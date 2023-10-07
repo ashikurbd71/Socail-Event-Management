@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaEye,FaEyeSlash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Media from '../Media/Media';
+import { Authcontext } from '../Provider/AuthPorvider';
+import toast from 'react-hot-toast';
 
 const Login = () => {
      const[showpass,setShowpass] = useState(false)
+     const{signinuser} =  useContext(Authcontext)
 
      const handlesubmit =  e => {
 
@@ -13,6 +17,22 @@ const Login = () => {
 
     const email = form.get('email')
     const password = form.get('password')
+
+    signinuser(email,password)
+
+     .then(result => {
+
+        console.log(result.user)
+        return toast.success('Login Successfuly!')
+         
+       
+    })
+    .catch(error => {
+
+        console.log(error.message)
+
+        return toast.error(error.message)
+    })
 
     console.log(email,password)
 
@@ -26,7 +46,7 @@ const Login = () => {
         <div className='' >
              
 
-                <div className='min-h- min-h min-h-screen flex justify-center items-center'>
+                <div className='min-h- my-10 min-h min-h-screen flex justify-center items-center'>
 
                 <div className="w-full max-w-sm p-4 bg-[#141E46] border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
       <form onSubmit={handlesubmit} className="space-y-6" action="#">
@@ -94,6 +114,7 @@ const Login = () => {
         <div className=" text-[#fff] text-[16px] font-medium dark:text-gray-300">
         Dont’t Have An Account ? <Link to={"/register"}><a href="#" className="text-[#1AACAC] hover:underline dark:text-blue-500">Create account</a></Link>
         </div>
+           <Media></Media>
       </form>
     </div>
 

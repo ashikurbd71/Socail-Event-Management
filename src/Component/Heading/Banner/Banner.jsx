@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div>
-      <div className="flex px-24 lg:flex-row flex-col bg-[#141E46]      ">
+      <div className="flex pb-5 px-24 lg:flex-row flex-col bg-[#141E46]      ">
         <div>
           <img src={cover} alt="" className=" w-[500px]" />
         </div>

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Media from "../Media/Media";
+import { Authcontext } from "../Provider/AuthPorvider";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const [showpass, setShowpass] = useState(false);
+   const{createuser} =  useContext(Authcontext)
 
   const handlesubmit = (e) => {
 
@@ -12,6 +16,21 @@ const Register = () => {
 
     const email = form.get("email");
     const password = form.get("password");
+
+    createuser(email,password)
+     .then(result => {
+
+        console.log(result.user)
+        return toast.success('Register Successfuly!')
+         
+       
+    })
+    .catch(error => {
+
+        console.log(error.message)
+
+        return toast.error(error.message)
+    })
 
     console.log(email, password);
   };
@@ -130,6 +149,7 @@ const Register = () => {
               </a>
             </Link>
           </div>
+          <Media></Media>
         </form>
       </div>
     </div>
