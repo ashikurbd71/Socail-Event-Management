@@ -82,8 +82,8 @@ const Navber = () => {
               </li>
             </ul>
           </div>
-           <Link to={"/"}>  <a  className="btn btn-ghost font-bold normal-case lg:text-3xl text-2xl text-[#EEEEEE]">
-            Social <span className="lg:text-2xl text-xl text-[#088395]">Events</span>
+           <Link to={"/"}>  <a  className="btn btn-ghost font-bold normal-case lg:text-3xl text-xl text-[#EEEEEE]">
+            Social <span className="lg:text-2xl text-lg text-[#088395]">Events</span>
           </a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">

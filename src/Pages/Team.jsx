@@ -16,9 +16,9 @@ const Team = () => {
 
     return (
         <div className='my-20 '>
-            <h1 className='text-4xl text-center font-bold'>Meet Our Team</h1>
+            <h1 className='lg:text-4xl text-2xl md:text-3xl text-center font-bold'>Meet Our Team</h1>
 
-               <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mt-10 '>
+               <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 mt-10 '>
                 {
                     teams?.map(team => <Teamcard team={team} key={team}></Teamcard>)
                 }
