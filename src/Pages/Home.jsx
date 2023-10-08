@@ -1,4 +1,5 @@
 
+import Castomur from '../Castomur/Castomur';
 import Banner from '../Component/Heading/Banner/Banner';
 import Service from '../Component/Service/Service';
 import Team from './Team';
@@ -17,6 +18,8 @@ const Home = () => {
             <Service></Service>
 
             <Team></Team>
+
+            <Castomur></Castomur>
           </div>
 
         </>

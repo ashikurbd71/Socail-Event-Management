@@ -1,0 +1,23 @@
+[
+    {
+      "customer_name": "John Doe",
+      "comment_text": "Had a fantastic time at the event! The organization and activities were top-notch.",
+      "image_url": "https://i.ibb.co/LPC9LSL/images-1.jpg"
+    },
+    {
+      "customer_name": "Mary Smith",
+      "comment_text": "Thank you for hosting such an amazing event. It was a pleasure to be part of it!",
+      "image_url": "https://i.ibb.co/brfH5PZ/images-2.jpg"
+    },
+    {
+      "customer_name": "David Johnson",
+      "comment_text": "The summer picnic was a blast! Great food, great people, and great atmosphere.",
+      "image_url": "https://i.ibb.co/Ss7rqJN/images-3.jpg"
+    },
+    {
+      "customer_name": "Linda Brown",
+      "comment_text": "Loved every moment of the picnic. Looking forward to the next one!",
+      "image_url": "https://i.ibb.co/JRxrF5Y/download-5.jpg"
+    }
+    
+  ]

@@ -15,8 +15,8 @@ const Team = () => {
       })
 
     return (
-        <div className='my-10 '>
-            <h1 className='text-4xl text-center font-bold'>Our Team</h1>
+        <div className='my-20 '>
+            <h1 className='text-4xl text-center font-bold'>Meet Our Team</h1>
 
                <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mt-10 '>
                 {
