@@ -40,7 +40,9 @@ const Register = () => {
 
   return (
     <div className="min-h- min-h min-h-screen flex justify-center items-center">
-      <div className="w-full max-w-sm p-4 my-10 bg-[#141E46] border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full max-w-sm p-4 my-10 bg-[#141E46] border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <form onSubmit={handlesubmit} className="space-y-6" action="#">
           <h5 className="text-[30px] font-bold text-[#1AACAC]  dark:text-white text-center">
             Register your account
