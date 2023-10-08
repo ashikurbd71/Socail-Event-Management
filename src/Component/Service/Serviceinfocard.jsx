@@ -8,7 +8,7 @@ const Serviceinfocard = ({info}) => {
 
     const { name,  image ,details} = info
     return (
-        <div>
+        <div  data-aos="zoom-out-right">
             <h1 className="text-4xl font-bold text-center mb-10">Event Details</h1>
 
 <div className="card lg:card-side  bg-[#141E46]  shadow-xl">

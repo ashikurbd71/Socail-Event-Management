@@ -39,7 +39,7 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h- min-h min-h-screen flex justify-center items-center">
+    <div className="px-5 lg:px-0 min-h- min-h min-h-screen flex justify-center items-center">
       <div className="w-full max-w-sm p-4 my-10 bg-[#141E46] border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
