@@ -9,11 +9,16 @@ const About = () => {
   return (
     <div>
       <div className="flex gap-10 pb-5 px-24 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
-        <div>
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <img src={about} alt="" className=" lg:w-[500px] md:w-[500px]" />
         </div>
 
-        <div>
+        <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
           <h1 className="lg:text-4xl text-2xl  text-[#fff] ">
             <span className=" font-extrabold text-[#1AACAC] lg:text-5xl text-3xl">
               About
@@ -39,7 +44,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="my-10 mx-auto max-w-screen-xl ">
+      <div className="my-10 mx-auto max-w-screen-xl "  data-aos="fade-up"
+     data-aos-duration="3000">
         <div
           className="hero min-h-screen"
           style={{
@@ -106,7 +112,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="my-10 mx-auto max-w-screen-xl space-y-3 px-5 lg:-0">
+      <div className="my-10 mx-auto max-w-screen-xl space-y-3 px-5 lg:-0"  data-aos="fade-up"
+     data-aos-duration="3000">
 
       <h1 className="mb-5 text-center lg:text-5xl text-3xl md:text-4xl font-bold text-[#1AACAC]">
                 Anwser & Question

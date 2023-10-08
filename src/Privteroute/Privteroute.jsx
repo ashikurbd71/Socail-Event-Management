@@ -4,9 +4,17 @@ import { Navigate, useLocation } from 'react-router-dom';
 
 const Privteroute = ({children}) => {
 
-    const{user} = useContext(Authcontext)
+    const{user,loader} = useContext(Authcontext)
+
 
     const location = useLocation()
+
+    if(loader){
+
+        return <div className='flex justify-center my-20'>
+            <span className="loading loading-dots loading-lg"></span>
+        </div>
+    }
 
     if(user){
 

@@ -9,15 +9,18 @@ import auth from '../Firebase/Friebase';
  const Googleprovider = new GoogleAuthProvider()
  const Githubprovider = new GithubAuthProvider()
 
+
 const AuthPorvider = ({children}) => {
 
       const [user,setUser] = useState(null)
+      const [loader,setLoader] = useState(true)
+
 
 
 // Googlesignin
                                                                                  
 const Googlesigin = () => {
-
+setLoader(true)
      return signInWithPopup(auth,Googleprovider)
 }
 
@@ -25,7 +28,7 @@ const Googlesigin = () => {
 // Githubprovider
 
 const Gitsigin = () => {
-
+  setLoader(true)
     return signInWithPopup(auth,Githubprovider)
 }
 
@@ -33,7 +36,7 @@ const Gitsigin = () => {
 
 useEffect(() => {
   const unsbcribe = onAuthStateChanged(auth, (user) => {
-
+    setLoader(false)
     setUser(user);
   });
 
@@ -46,21 +49,22 @@ useEffect(() => {
 //   createuse
 
    const createuser = (email,password) => {
-
+    setLoader(true)
      return createUserWithEmailAndPassword(auth,email,password)
    }
 
 // signinuser
 
 const signinuser = (email,password) => {
-
+  setLoader(true)
+    
     return signInWithEmailAndPassword(auth,email,password)
 }
 
 // siginout
 
 const siginout = () => {
-
+  setLoader(true)
   return signOut(auth)
 }
 
@@ -70,7 +74,8 @@ const siginout = () => {
     Gitsigin,
     createuser,
     signinuser,
-    siginout
+    siginout,
+    loader
 }
 
 

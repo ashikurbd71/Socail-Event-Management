@@ -7,11 +7,16 @@ const Contect = () => {
   return (
     <div>
       <div className="flex gap-10 pb-5 px-24 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
-        <div>
+        <div  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <img src={contect} alt="" className=" lg:w-[500px] md:w-[500px]" />
         </div>
 
-        <div>
+        <div  data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
           <h1 className="lg:text-4xl text-2xl  text-[#fff] ">
             <span className=" font-extrabold text-[#1AACAC] lg:text-5xl text-3xl">
               Contect
@@ -36,11 +41,13 @@ const Contect = () => {
         </div>
       </div>
 
-      <div className="my-10 mx-auto max-w-screen-xl">
+      <div className="my-10 mx-auto max-w-screen-xl" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl font-bold">Contact From!</h1>
+              <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-[#1AACAC]">Contact From!</h1>
               <p className="py-6 text-xl font-medium">
                 Have a question or need assistance? We're here to help! Feel
                 free to reach out to us using the contact information provided

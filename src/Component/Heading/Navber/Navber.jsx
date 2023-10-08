@@ -28,7 +28,7 @@ const Navber = () => {
       <div className="navbar bg-[#141E46] pb-5 ">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost  text-white lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -46,7 +46,7 @@ const Navber = () => {
             </label>
             <ul
               tabIndex={0}
-              className=" menu-sm dropdown-content mt-3  z-[1] p-2 shadow  rounded-box w-52"
+              className=" menu-sm dropdown-content mt-3  z-[1] p-2 shadow  bg-white rounded-box w-52"
             >
               <li className="text-lg font-bold ">
                 <NavLink
@@ -87,25 +87,25 @@ const Navber = () => {
           </a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu  menu-horizontal px-1 text-[#fff]">
-            <li className="text-lg font-bold mr-5">
+          <ul className=" py-1  menu-horizontal px-1 text-[#fff]">
+            <li className="text-lg font-bold mr-10">
               {" "}
               <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "bg-green-500" : ""
+                  isPending ? "pending" : isActive ? "text-green-500 " : ""
                 }
               >
                 Home
               </NavLink>
             </li>
 
-            <li className="text-lg font-bold mr-5">
+            <li className="text-lg font-bold mr-10">
               {" "}
               <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "bg-green-500 " : ""
+                  isPending ? "pending" : isActive ? "text-green-500 " : ""
                 }
               >
                 About
@@ -117,7 +117,7 @@ const Navber = () => {
               <NavLink
                 to="/contect"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "bg-green-500" : ""
+                  isPending ? "pending" : isActive ? "text-green-500 " : ""
                 }
               >
                 Contect

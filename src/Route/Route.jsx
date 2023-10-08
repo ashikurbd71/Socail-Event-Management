@@ -8,12 +8,13 @@ import Serviceinfo from "../Component/Service/Serviceinfo";
 import Login from "../Form/Login";
 import Register from "../Form/Register";
 import Privteroute from "../Privteroute/Privteroute";
-import Serviceinfocard from "../Component/Service/Serviceinfocard";
+import Error from "../Pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Mainlayout></Mainlayout>,
+    errorElement:<Error></Error>,
 
     children:[
 
@@ -25,13 +26,13 @@ const router = createBrowserRouter([
         {
 
             path:"/about",
-            element:<Privteroute><About></About></Privteroute>
+            element:<About></About>
         },
 
         {
 
             path:"/contect",
-            element:<Contect></Contect>
+            element:<Privteroute><Contect></Contect></Privteroute>
         },
     {
         path:"/serviceinfo/:id",
