@@ -1,4 +1,4 @@
-          #   WEBSITE FEATURE
+# WEBSITE FEATURE
 
 # t is a social event management website.This website first has a banner followed by a service section followed by a happy customer section
 
@@ -11,4 +11,4 @@
 # There are two more routes on the website like About Us section which is discussed in detail on the website Contact section Private route Must login to access there
 
 
-#Live Link : http://socailevnet-pan.surge.sh/
+# Live Link : http://socailevnet-pan.surge.sh/
