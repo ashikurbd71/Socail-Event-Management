@@ -77,7 +77,7 @@ const Navber = () => {
                     isPending ? "pending" : isActive ? "bg-green-500" : ""
                   }
                 >
-                  Contect
+                  Contact
                 </NavLink>
               </li>
             </ul>
@@ -120,7 +120,7 @@ const Navber = () => {
                   isPending ? "pending" : isActive ? "text-green-500 " : ""
                 }
               >
-                Contect
+                Contact
               </NavLink>
             </li>
           </ul>

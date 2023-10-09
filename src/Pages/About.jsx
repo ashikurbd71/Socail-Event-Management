@@ -12,7 +12,7 @@ const About = () => {
         <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className="w-1/2">
-          <img src={about} alt="" className=" " />
+          <img src={about} alt="" className="hidden lg:block" />
         </div>
 
         <div data-aos="fade-left"

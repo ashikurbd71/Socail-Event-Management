@@ -12,7 +12,7 @@ const Banner = () => {
           data-aos-easing="ease-in-sine"
           className ="w-1/2 "
         >
-          <img src={cover} alt="" className="" />
+          <img src={cover} alt="" className="hidden lg:block"/>
         </div>
 
         <div

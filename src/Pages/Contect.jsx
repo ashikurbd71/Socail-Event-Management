@@ -10,7 +10,7 @@ const Contect = () => {
         <div  data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className="w-1/2">
-          <img src={contect} alt="" className=" " />
+          <img src={contect} alt="" className="hidden lg:block" />
         </div>
 
         <div  data-aos="fade-left"
@@ -19,7 +19,7 @@ const Contect = () => {
      data-aos-duration="500" className="w-1/2">
           <h1 className="lg:text-4xl text-2xl  text-[#fff] ">
             <span className=" font-extrabold text-[#1AACAC] lg:text-5xl text-3xl">
-              Contect
+              Contact
             </span>
             <span className=" font-extrabold">Us</span>
           </h1>

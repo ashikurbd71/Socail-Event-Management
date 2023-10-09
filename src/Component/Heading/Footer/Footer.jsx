@@ -9,7 +9,7 @@ const Footer = () => {
  
  <Link className='text-lg font-semibold' to={"/"}>Home</Link>
  <Link className='text-lg font-semibold' to={"/about"}>About</Link>
- <Link className='text-lg font-semibold' to={"/contect"}>Contect</Link>
+ <Link className='text-lg font-semibold' to={"/contect"}>Contact</Link>
     
   </nav> 
   <nav>
