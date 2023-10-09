@@ -6,17 +6,17 @@ import contect from "../assets/contect.jpg";
 const Contect = () => {
   return (
     <div>
-      <div className="flex gap-10 pb-5 px-24 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
+      <div className="flex lg:gap-20  gap-5 items-center lg:pb-32  justify-center  px-10 py-10 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
         <div  data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-          <img src={contect} alt="" className=" lg:w-[500px] md:w-[500px]" />
+     data-aos-easing="ease-in-sine" className="w-1/2">
+          <img src={contect} alt="" className=" " />
         </div>
 
         <div  data-aos="fade-left"
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
-     data-aos-duration="500">
+     data-aos-duration="500" className="w-1/2">
           <h1 className="lg:text-4xl text-2xl  text-[#fff] ">
             <span className=" font-extrabold text-[#1AACAC] lg:text-5xl text-3xl">
               Contect
@@ -90,7 +90,7 @@ const Contect = () => {
                   <textarea name="" id="" cols="20" rows="6" placeholder="Message"></textarea>
                  
                 </div>
-                <div className="form-control mt-6">
+                <div className="form-control mt-6 ">
                   <button className="btn btn-primary bg-[#1AACAC] border-none text-[#fff] ">Send Message</button>
                 </div>
               </form>

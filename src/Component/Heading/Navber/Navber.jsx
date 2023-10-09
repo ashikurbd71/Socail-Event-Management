@@ -160,7 +160,7 @@ const Navber = () => {
           </div>
 
           
-    <Link to={'/login'}> <button className="btn btn-outline btn-success ml-4 ">Login</button></Link>
+   {user ?  <Link to={'/login'}> <button className="btn btn-outline hidden btn-success ml-4 ">Login</button></Link> :  <Link to={'/login'}> <button className="btn btn-outline btn-success ml-4 ">Login</button></Link>}
         </div>
       </div>
     </div>

@@ -14,6 +14,13 @@ const Castomercard = ({comment}) => {
               src={image_url}
               alt="Bonnie image"
             />
+            <div className="rating mb-3">
+  <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
+  <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
+  <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
+  <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
+  <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
+</div>
             <h5 className="mb-1 text-xl font- font-semibold text-[#1AACAC] dark:text-white">
              {customer_name}
             </h5>

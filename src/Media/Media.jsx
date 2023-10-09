@@ -3,16 +3,20 @@ import { FaGithub } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { Authcontext } from "../Provider/AuthPorvider";
 import toast from "react-hot-toast";
+import { useNavigate ,useLocation } from "react-router-dom";
 
 const Media = () => {
   const { Googlesigin, Gitsigin } = useContext(Authcontext);
-
+   const location = useLocation()
+   const navigate = useNavigate()
   const handleprovider = (media) => {
     media()
       .then((result) => {
         console.log(result.user);
+        navigate(location?.state ? location?.state : "/")
 
         return toast.success("Login SuccessFuly");
+        
       })
 
       .catch((error) => {

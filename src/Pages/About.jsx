@@ -8,17 +8,17 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="flex gap-10 pb-5 px-24 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
+      <div className="flex lg:gap-20  gap-5  justify-center lg:pb-28 px-10 py-10 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
         <div data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-          <img src={about} alt="" className=" lg:w-[500px] md:w-[500px]" />
+     data-aos-easing="ease-in-sine" className="w-1/2">
+          <img src={about} alt="" className=" " />
         </div>
 
         <div data-aos="fade-left"
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
-     data-aos-duration="500">
+     data-aos-duration="500"  className='w-1/2'>
           <h1 className="lg:text-4xl text-2xl  text-[#fff] ">
             <span className=" font-extrabold text-[#1AACAC] lg:text-5xl text-3xl">
               About
@@ -38,7 +38,7 @@ const About = () => {
           <Link to={"/contect"}>
             {" "}
             <button className="btn btn-outline btn-success px-10 ">
-              Contect <BsFillTelephoneFill></BsFillTelephoneFill>
+              Contact <BsFillTelephoneFill></BsFillTelephoneFill>
             </button>
           </Link>
         </div>
@@ -62,8 +62,7 @@ const About = () => {
                 Welcome to Socail Event where we specialize in transforming
                 ordinary moments into extraordinary, memorable experiences. Our
                 mission is to curate social events that embody the essence of
-                togetherness, joy, and meaningful connections. At [Company
-                Name], we're driven by a passion for creating celebrations that
+                togetherness, joy, and meaningful connections. At socail event, we're driven by a passion for creating celebrations that
                 go beyond the ordinary. Whether it's an intimate gathering, a
                 corporate event, or a grand celebration, we excel in designing
                 experiences that leave an indelible mark. Our dedicated and
@@ -84,22 +83,7 @@ const About = () => {
                 based on your company's ethos, services, and the impression you
                 want to convey to your audience.At the heart of our approach
                 lies a passionate team driven by creativity and a deep sense of
-                purpose. Every event we organize is a canvas upon which we
-                artfully paint unique experiences, finely tuned to suit your
-                desires and preferences. Whether it's an intimate soirée, a
-                corporate affair, or a grand celebration, our meticulous
-                attention to detail ensures that each element is precisely
-                curated to perfection. From opulent galas exuding elegance to
-                vibrant, themed soirées that beckon adventure, we transform your
-                vision into reality, surpassing all expectations. We believe in
-                the magic of connections and the significance of community. Our
-                events are designed to unite people, initiate engaging
-                dialogues, and cultivate friendships that withstand the test of
-                time. With [Company Name], your event transcends mere planning —
-                it becomes a journey of creating memories that will be recounted
-                and cherished for generations. Let us be the architects of your
-                social tapestry, weaving together moments that will forever be
-                etched in the tapestry of your life.
+                purpose. 
               </p>
 
               <div className="flex mt-4 gap-4 justify-center space-x-3 md:mt-6">
@@ -116,7 +100,7 @@ const About = () => {
      data-aos-duration="3000">
 
       <h1 className="mb-5 text-center lg:text-5xl text-3xl md:text-4xl font-bold text-[#1AACAC]">
-                Anwser & Question
+      Question &  Anwser 
               </h1>
         <div
           tabIndex={0}
