@@ -3,11 +3,21 @@ import { Link, NavLink } from "react-router-dom";
 import { Authcontext } from "../../../Provider/AuthPorvider";
 import toast from "react-hot-toast";
 import users from '../../../assets/user.png'
+import { Hooks } from "../../../Hooks/Hooks";
+import { CiDark } from 'react-icons/ci';
+import { BsFillSunFill } from 'react-icons/bs';
 
 const Navber = () => {
 
+  const {handlechanges,mood} = Hooks()
   const{user,siginout} =useContext(Authcontext)
 
+
+  
+
+
+
+   
    const handlesiginout = () => {
 
     siginout()
@@ -48,7 +58,7 @@ const Navber = () => {
               tabIndex={0}
               className=" menu-sm dropdown-content mt-3  z-[1] p-2 shadow  bg-white rounded-box w-52"
             >
-              <li className="text-lg font-bold ">
+              <li className="text-lg font-bold text-black ">
                 <NavLink
                   to="/"
                   className={({ isActive, isPending }) =>
@@ -123,10 +133,18 @@ const Navber = () => {
                 Contact
               </NavLink>
             </li>
+
+            {/* darkmood button */}
+           
+
           </ul>
         </div>
         <div className="navbar-end">
 
+           
+       <button onClick={handlechanges} className="mr-5">
+        {mood === 'dark'? <BsFillSunFill className="text-3xl text-white"></BsFillSunFill> : <CiDark className="text-3xl text-white"></CiDark>}
+       </button>
           <div>
 
      {

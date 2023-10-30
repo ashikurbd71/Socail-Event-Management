@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div>
-      <div className="flex pb-5 px-10 justify-center py-10 lg:flex-row md:flex-row flex-col  bg-[#141E46]">
+      <div className="flex pb-5 px-10 justify-center py-10 lg:flex-row md:flex-row flex-col dark:bg-black  bg-[#141E46]">
         <div
           data-aos="fade-right"
           data-aos-offset="300"

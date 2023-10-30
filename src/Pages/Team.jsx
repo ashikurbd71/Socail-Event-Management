@@ -12,7 +12,7 @@ const Team = () => {
 
   return (
     <div className="my-20 " >
-      <h1 className="lg:text-4xl text-2xl md:text-3xl text-center font-bold">
+      <h1 className="lg:text-4xl dark:text-white text-2xl md:text-3xl text-center font-bold">
         Meet Our Team
       </h1>
 

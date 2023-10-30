@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Media from "../Media/Media";
 import { Authcontext } from "../Provider/AuthPorvider";
 import toast from "react-hot-toast";
@@ -126,14 +126,14 @@ const Login = () => {
             </button>
             <div className=" text-[#fff] text-[16px] font-medium dark:text-gray-300">
               Dont’t Have An Account ?{" "}
-              <Link to={"/register"}>
+              <NavLink to={"/register"}>
                 <a
                   href="#"
                   className="text-[#1AACAC] hover:underline dark:text-blue-500"
                 >
                   Create account
                 </a>
-              </Link>
+              </NavLink>
             </div>
             <Media></Media>
           </form>

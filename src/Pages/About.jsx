@@ -8,7 +8,7 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="flex lg:gap-20  gap-5  justify-center lg:pb-28 px-10 py-10 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
+      <div className="flex lg:gap-20  gap-5  justify-center lg:pb-28 px-10 py-10 lg:flex-row md:flex-row flex-col dark:bg-black  bg-[#141E46]      ">
         <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className="w-1/2">

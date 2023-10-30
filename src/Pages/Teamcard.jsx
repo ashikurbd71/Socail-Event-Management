@@ -8,7 +8,7 @@ const Teamcard = ({ team }) => {
   return (
     <>
       <div className=" px-5 lg:px-0">
-        <div className="w-full  bg-[#141E46] text-[#fff] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="w-full  bg-[#141E46] text-[#fff] border border-gray-200 rounded-lg shadow dark:border-gray-700">
           <div className="flex justify-end px-4 pt-4"></div>
           <div className="flex flex-col items-center pb-10">
             <img

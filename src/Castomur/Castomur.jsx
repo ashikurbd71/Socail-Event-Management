@@ -14,11 +14,11 @@ const Castomur = () => {
     <div className="my-10 "data-aos="fade-up"
     data-aos-duration="3000" >
       <div>
-        <h1 className="lg:text-4xl text-2xl md:text-3xl  font-bold text-center">
+        <h1 className="lg:text-4xl dark:text-white text-2xl md:text-3xl  font-bold text-center">
           Happy Customar
         </h1>
 
-        <p className="py-5 text-center font-me font-medium text-[#141E46] lg:text-xl text-lg lg:px-20">
+        <p className="py-5 dark:text-white text-center font-me font-medium text-[#141E46] lg:text-xl text-lg lg:px-20">
           {" "}
           Testimonials from Our Happy Clients. Experience Excellence in Service,
           Quality, and Satisfaction, Reflecting Our Commitment to Deliver

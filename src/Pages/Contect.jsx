@@ -6,7 +6,7 @@ import contect from "../assets/contect.jpg";
 const Contect = () => {
   return (
     <div>
-      <div className="flex lg:gap-20  gap-5 items-center lg:pb-32  justify-center  px-10 py-10 lg:flex-row md:flex-row flex-col bg-[#141E46]      ">
+      <div className="flex lg:gap-20  gap-5 items-center lg:pb-32  justify-center  px-10 py-10 lg:flex-row md:flex-row flex-col dark:bg-black  bg-[#141E46]      ">
         <div  data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className="w-1/2">
@@ -41,14 +41,14 @@ const Contect = () => {
         </div>
       </div>
 
-      <div className="my-10 mx-auto max-w-screen-xl" data-aos="fade-right"
+      <div className="my-10  mx-auto max-w-screen-xl" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200 dark:bg-slate-800  dark:border-gray-700">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
               <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-[#1AACAC]">Contact From!</h1>
-              <p className="py-6 text-xl font-medium">
+              <p className="py-6 text-xl font-medium dark:text-white">
                 Have a question or need assistance? We're here to help! Feel
                 free to reach out to us using the contact information provided
                 below. Whether you're looking to plan an event, inquire about
@@ -57,7 +57,7 @@ const Contect = () => {
               </p>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <form className="card-body bg-[#141E46] ">
+              <form className="card-body bg-[#141E46]  dark:bg-gray-800 dark:border-gray-700">
                 <div className="form-control">
                   <label className="label ">
                     <span className="label-text text-[#fff] text-xl fon">Email</span>
