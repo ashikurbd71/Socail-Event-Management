@@ -10,5 +10,12 @@
 
 . There are two more routes on the website like About Us section which is discussed in detail on the website Contact and about section Private route Must login to access there
 
+# Use Technologics : 
+.Tailwind CSS .Javascript .React Js .Firebase .Json
 
+# Web Tools
+
+.Git .Github .Surge
+
+# Name : SocailEvnet
 # Live Link : http://socailevnet-pan.surge.sh/
